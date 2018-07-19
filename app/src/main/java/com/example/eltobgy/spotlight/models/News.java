@@ -7,11 +7,11 @@ package com.example.eltobgy.spotlight.models;
 public class News {
     private String mTitle;
     private String mDescription;
-    private int mImageResourceId;
+    private String mImageResourceId = "";
 
 
 
-    public News(String mTitle, String mDescription, int mImageResourceId) {
+    public News(String mTitle, String mDescription, String mImageResourceId) {
 
         this.mTitle = mTitle;
         this.mDescription = mDescription;
@@ -24,11 +24,11 @@ public class News {
         this.mDescription = mDescription;
     }
 
-    public int getmImageResourceId() {
+    public String getmImageResourceId() {
         return mImageResourceId;
     }
 
-    public void setmImageResourceId(int mImageResourceId) {
+    public void setmImageResourceId(String mImageResourceId) {
         this.mImageResourceId = mImageResourceId;
     }
 
